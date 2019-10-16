@@ -1,0 +1,22 @@
+{
+  "name": "paginaprofil",
+  "version": "1.0.0",
+  "description": "descriere",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioanacaramavrov1/webtech-profile2020.git"
+  },
+  "author": "Ioana Caramavrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioanacaramavrov1/webtech-profile2020/issues"
+  },
+  "homepage": "https://github.com/ioanacaramavrov1/webtech-profile2020#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
