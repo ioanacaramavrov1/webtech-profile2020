@@ -4,6 +4,8 @@ const app = express()
 //directorul din care vreau sa imi fie servite acele fisiere statice  (express.static)
 //'/' directorul curent 
 app.use('/', express.static('frontend'))
+app.use(express.json()) //for parsing
+app.use(express.urlencoded({extended:true}))
 app.get('/hello', function (req, res) {
   res.send('Hello World')
 })
@@ -24,5 +26,14 @@ app.get('/messages', function(request, response){
     response.status(200).send(messages);
     //pasez obiectul messages 
     
+})
+
+// fac un endpoint de tip post care sa primeasca datele
+
+app.post('/messages', function(request,response){
+    //am o functie care trebuie sa intoarca cceva
+    console.log(request.body)
+   // console.log(request)
+    response.send('Data ' + request.body)
 })
 app.listen(8080)

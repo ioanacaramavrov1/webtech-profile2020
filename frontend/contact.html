@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <!-- cand apasa pe submit incearca sa imi trimita datele prin get, dar la form am un atribut method
+        care poate trimite datele prin POST - definesc un endpoint nou de tip post care sn MESSAGES-->
+        <form method="POST" action="/messages">
+            <label for="">Nume</label>
+            <input type="text" name="fullname" value="Firstname" /> <br/>
+            <label>Message</label>
+            <!-- 5 randuri si 5 de caractere ( rows si cols) -->
+            <textarea name="message" rows="5" cols="50">
+            sdasdas
+            </textarea> <br/>
+            <input type="submit" value="Send message" />
+        </form>
+    </body>
+</html>
